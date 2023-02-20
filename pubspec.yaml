@@ -36,10 +36,57 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  auto_route: ^5.0.4
+  flutter_bloc: ^8.1.1
+  freezed: ^2.3.2
+  freezed_annotation: ^2.2.0
+  build_runner: ^2.3.3
+  json_annotation: ^4.8.0
+  json_serializable: ^6.6.1
+  equatable: ^2.0.5
+
+  firebase_messaging: ^14.1.4
+  firebase_analytics: ^10.0.7
+  flutter_local_notifications: ^13.0.0
+  firebase_core: ^2.4.1
+  awesome_notifications: ^0.7.4+1
+
+#  flutter_flavor: ^3.1.1
+
 
 dev_dependencies:
+  auto_route_generator: 5.0.3
+  build_runner: ^2.3.3
+  flutter_flavorizr: ^2.1.5
+
   flutter_test:
     sdk: flutter
+
+flavorizr:
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+    ios:
+
+  flavors:
+    apple:
+      app:
+        name: "Apple App"
+
+      android:
+        applicationId: "com.example.apple"
+
+      ios:
+        bundleId: "com.example.apple"
+
+    banana:
+      app:
+        name: "Banana App"
+
+      android:
+        applicationId: "com.example.banana"
+      ios:
+        bundleId: "com.example.banana"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
